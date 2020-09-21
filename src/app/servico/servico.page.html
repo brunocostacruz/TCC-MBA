@@ -1,0 +1,29 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Serviços</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen class="ion-padding">
+  <ion-label color="dark">Descrição do Serviço</ion-label>
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="nome"></ion-input>
+  </ion-item>
+
+  <ion-label color="dark">Tempo</ion-label>
+  <ion-item>
+    <ion-input type="number" [(ngModel)]="tempo"></ion-input>
+  </ion-item>
+  <p></p>
+  <ion-button expand="block" shape="round" (click)="submit()">Gravar</ion-button>
+</ion-content>
+
+<ion-footer translucent>
+  <ion-toolbar text-center>
+    <ion-button size="small" expand="block" shape="round" (click)="showPicker()">
+      Serviços Cadastrados
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
