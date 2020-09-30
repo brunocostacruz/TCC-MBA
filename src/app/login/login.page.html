@@ -14,15 +14,15 @@
               <img src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/clock-256.png">
             </ion-slide>
           </ion-slides>
-        </div> 
+        </div>
         <ion-list no-lines>
           <ion-item>
-            <ion-label>E-mail</ion-label>
+            <ion-label position="floating">E-mail</ion-label>
             <ion-input type="email" clear-input="true" [(ngModel)]="email"></ion-input>
           </ion-item>
 
           <ion-item>
-            <ion-label>Senha</ion-label>
+            <ion-label position="floating">Senha</ion-label>
             <ion-input type="password" clear-input="true" [(ngModel)]="senha"></ion-input>
           </ion-item>
         </ion-list>
@@ -37,11 +37,11 @@
   <ion-toolbar text-center>
     <ion-button button-type="String" expand="block" fill="clear" size="small" color="dark" (click)="register()">
       <small><strong>Cadastre-se</strong></small></ion-button>
-      <ion-button size="small" color="light" slot="end">
-        <ion-icon name="logo-facebook"></ion-icon>    
-      </ion-button>
-      <ion-button size="small" color="light" slot="end">
-        <ion-icon name="logo-google"></ion-icon>    
-      </ion-button>
+    <ion-button size="small" color="light" slot="end">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </ion-button>
+    <ion-button size="small" color="light" slot="end">
+      <ion-icon name="logo-google"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-footer>
