@@ -20,7 +20,7 @@ export class HomePage {
   }
 
   openCadService() {
-    this.router.navigateByUrl('servico')
+    this.router.navigateByUrl('service')
     this.menu.close();
   }
 
@@ -34,6 +34,12 @@ export class HomePage {
 
   logout(){
     this.router.navigateByUrl('login')
+    this.menu.close();
+  }
+
+  openAppointment(){
+    this.router.navigateByUrl('newappointment') 
+   
   }
 }
 

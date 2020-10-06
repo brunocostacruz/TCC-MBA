@@ -3,26 +3,26 @@ import { PickerController } from '@ionic/angular';
 import { PickerOptions } from "@ionic/core";
 
 @Component({
-  selector: 'app-servico',
-  templateUrl: './servico.page.html',
-  styleUrls: ['./servico.page.scss'],
+  selector: 'app-service',
+  templateUrl: './service.page.html',
+  styleUrls: ['./service.page.scss'],
 })
-export class ServicoPage implements OnInit {
+export class ServicePage implements OnInit {
   services: string[] = [
     "Corte", ,
     "Escova",
     "Maquiagem",
     "Progressiva"];
-    nome: String;
+  nome: String;
   constructor(
     private pickerCtrl: PickerController,
   ) { }
 
   ngOnInit() {
   }
-submit(){
-  console.log("Fazer Gravar: " + this.nome)
-}
+  submit() {
+    console.log("Fazer Gravar: " + this.nome)
+  }
   async showPicker() {
     let options: PickerOptions = {
       buttons: [
@@ -50,7 +50,7 @@ submit(){
   getColumnOptions() {
     let options = [];
     this.services.forEach(x => {
-      options.push({ text: x, value: x });      
+      options.push({ text: x, value: x });
     });
     return options;
   }

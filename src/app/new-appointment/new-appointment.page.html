@@ -1,0 +1,26 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Agendar Horario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="block" shape="round" (click)="showServices()">Adicionar Serviços</ion-button>
+
+
+  <ion-item>
+    <ion-label>Data</ion-label>
+    <ion-datetime stacked displayFormat="DD/MM/YYYY" min="2017"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Hora</ion-label>
+    <ion-datetime stacked displayFormat="HH:mm" minuteValues="0,15,30,45," hourValues="7,8,9,10,11,12,13,14,15,16,17,18,19"></ion-datetime>
+  </ion-item>
+</ion-content>
+
+<ion-footer>
+  <button ion-button full round color="secondary" (click)="solicitarAgendamento()">Confirmar</button>
+</ion-footer>

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LoadingController, NavController } from '@ionic/angular';
 import { Router } from '@angular/router';
-import { HomePage } from '../home/home.page';
 
 
 @Component({
