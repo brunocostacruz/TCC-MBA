@@ -8,19 +8,17 @@
 </ion-header>
 
 <ion-content>
-  <ion-button expand="block" shape="round" (click)="showServices()">Adicionar Serviços</ion-button>
-
-
   <ion-item>
     <ion-label>Data</ion-label>
-    <ion-datetime stacked displayFormat="DD/MM/YYYY" min="2017"></ion-datetime>
+    <ion-datetime stacked displayFormat="DD/MM/YYYY" min="2020"></ion-datetime>
   </ion-item>
   <ion-item>
     <ion-label>Hora</ion-label>
-    <ion-datetime stacked displayFormat="HH:mm" minuteValues="0,15,30,45," hourValues="7,8,9,10,11,12,13,14,15,16,17,18,19"></ion-datetime>
+    <ion-datetime stacked displayFormat="HH:mm" minuteValues="0,15,30,45," hourValues="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,00"></ion-datetime>
   </ion-item>
+  <ion-button color="light" expand="block" shape="round" (click)="showServices()">Adicionar Serviços</ion-button>
 </ion-content>
 
 <ion-footer>
-  <button ion-button full round color="secondary" (click)="solicitarAgendamento()">Confirmar</button>
+  <ion-button color="success" expand="block" shape="round" (click)="confirm()">Confirmar</ion-button> 
 </ion-footer>

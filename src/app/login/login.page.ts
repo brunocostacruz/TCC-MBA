@@ -24,5 +24,9 @@ export class LoginPage {
     this.router.navigateByUrl('home')
     var login = { email: this.email, senha: this.senha };
   }
+
+  register(){
+    this.router.navigateByUrl('register');
+  }
 }
 

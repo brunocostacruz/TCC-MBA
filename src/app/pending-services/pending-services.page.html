@@ -1,9 +1,30 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>pending-services</ion-title>
+    <ion-button menuToggle size="small" color="medium" fill="clear" (click)="closeModal()">
+      <ion-icon slot="start" name="close-outline"></ion-icon>
+    </ion-button>
+    <ion-SubTitle>Detalhe agendamento</ion-SubTitle>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-card-content>      
+      <h1> 25/10/2020 - 10:10</h1>
+    </ion-card-content>
+    <ion-card-title>Serviços:</ion-card-title>
+    <ion-list>
+      <ion-item>
+        <ion-label>Corte</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Progressiva</ion-label>
+      </ion-item>
+    </ion-list>
 
+    <ion-button shape="round" fill="clear" size="large" color="secondary" icon-start (click)="ligar()">
+      <ion-icon name="call-outline"></ion-icon>
+      (19) 9 9730-5366
+    </ion-button>
+  </ion-card>
 </ion-content>
